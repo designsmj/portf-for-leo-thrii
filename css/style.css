@@ -61,9 +61,9 @@ p {
     margin-bottom: 0;
 }
 .custom-navbar .navbar-brand  {
-	color: #000811bb;
+	color: white;
 	font-size: 40px;
-	text-shadow: -1px 2px 10px #a8d5fb52;
+	/* text-shadow: -1px 2px 10px #a8d5fb52; */
 	font-size: 45px;
 }
 .custom-navbar .navbar-brand .navbar-toggle {
@@ -82,7 +82,7 @@ p {
     transition: all 0.3s ease-in-out;
 }
 .custom-navbar .nav li a:hover {
-  	background: #f3722c;
+  	background: #058E3F;
   	transition: all 0.3s ease-in-out;
   	color: white;
 }
@@ -91,7 +91,7 @@ p {
   	outline: none;
 }
 .custom-navbar .nav li.active > a {
-    background-color: #f3722c;
+    background-color: #058E3F;
     color: white;
 }
 .custom-navbar .navbar-toggle {
@@ -118,7 +118,7 @@ p {
 
 /* home section */
 #home {
-  background: url('../images/pexels-picjumbocom-196644.png') no-repeat;
+  background: url('../images/background-1.jpg') no-repeat;
   -webkit-background-size: cover;
   background-size: cover;
   background-position: center;
@@ -153,15 +153,15 @@ p {
   box-shadow: 0px 0px 5px #011b313b;
 }
 #home .btn:hover {
-  background: #F3722C;
+  background: #058E3F;
   color: #ffffff;
-  border: 3px solid #F3722C;
+  border: 3px solid #058E3F;
   text-shadow: none;
 }
 
 /* about section */
 #about .col-md-4 .fa {
-  background: #f3722c;
+  background: #058E3F;
   border-radius: 50%;
   color: #ffffff;
   font-size: 32px;
@@ -226,19 +226,19 @@ div#home-title {
 }
 
 .year2 {
-  background-color: #F3712C;
+  background-color: #96E072!important;
 }
 
 .year3 {
-  background-color: #F3A42C;
+  background-color: #3DA35D!important;
 }
 
 .year4 {
-  background-color: #27609F;
+  background-color: #3E8914!important;
 }
 
 .year5 {
-  background-color: #1DA078;
+  background-color: #134611!important;
 }
 
 /* portfolio section */
@@ -288,7 +288,7 @@ div#home-title {
 .filter-wrapper li .selected,
 .filter-wrapper li a:focus,
 .filter-wrapper li a:hover {
-    background: #f3722c !important;
+    background: #058E3F !important;
     outline: none;
   }
 
@@ -339,6 +339,55 @@ div#home-title {
   padding-bottom: 40px;
 }
 
+#skills-chart {
+  width: 90%;
+  margin: auto;
+  height: 25rem;
+}
+
+.data {
+  color: white;
+  font-size: 1rem !important;
+}
+
+/** LIGHTBOX MARKUP **/
+
+.lightbox {
+  /* Default to hidden */
+  display: none;
+
+  /* Overlay entire screen */
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  
+  /* A bit of padding around image */
+  padding: 1em;
+
+  /* Translucent background */
+  background: rgba(0, 0, 0, 0.8);
+}
+
+/* Unhide the lightbox when it's the target */
+.lightbox:target {
+  display: block;
+}
+
+.lightbox span {
+  /* Full width and height */
+  display: block;
+  width: 100%;
+  height: 100%;
+
+  /* Size and position background image */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
 /* contact section */
 #contact {
   background: #f9f9f9;
@@ -379,7 +428,7 @@ div#home-title {
 
 /* footer section */
 footer {
-  background: url('../images/footer-bg.jpg') no-repeat;
+  background: url('../images/background-2-3.png') no-repeat;
   -webkit-background-size: cover;
   background-size: cover;
   background-position: center;
@@ -491,3 +540,8 @@ footer {
 
 
 
+
+
+.col-md-12.col-sm-12.text-center {
+    padding-bottom: 4rem;
+}
