@@ -44,6 +44,10 @@ p {
 	line-height: 28px;
 }
 
+.navbar.navbar-fixed-top.custom-navbar {
+  background-color: #ffffff1c;
+}
+
 #about,
 #team, #contact {
 	padding-top: 100px;
